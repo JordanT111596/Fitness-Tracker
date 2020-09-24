@@ -17,6 +17,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { use
 
 require("./routes/html-routes.js")(app)
 require("./routes/api-routes.js")(app)
+// require('./seeders/seed')
 
 // Start the server
 app.listen(PORT, () => {

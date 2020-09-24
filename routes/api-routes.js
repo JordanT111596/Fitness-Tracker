@@ -12,4 +12,16 @@ module.exports = app => {
             }
         });
     });
+
+    app.post("/api/workouts", (req, res) => {
+        db.Workout.create({}).then(data => {
+                res.json(data);
+            });
+    });
+
+    // app.put("/api/workouts", (req, res) => {
+    //     db.Workout.create({}).then(data => {
+    //             res.json(data);
+    //         });
+    // });
 };
