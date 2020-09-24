@@ -10,4 +10,4 @@ As specified in the assignment, one can view, create, and track daily workouts. 
 
 This site can be found at https://warm-bayou-69464.herokuapp.com/
 
-![Image of Fitness Tracker](public/assets/img/Fitness-Tracker--Demo.gif?raw=true "Fitness Tracker")
+![Image of Fitness Tracker](assets/img/Fitness-Tracker-Demo.gif?raw=true "Fitness Tracker")
