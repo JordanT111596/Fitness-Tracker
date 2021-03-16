@@ -13,6 +13,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+// The program searches for the online mongodb connection first, then it will just run locally if it is not found
 mongoose.connect(
     process.env.MONGODB_URI || 'mongodb://localhost/workout',
     {
@@ -26,6 +27,7 @@ mongoose.connect(
 
 require("./routes/html-routes.js")(app)
 require("./routes/api-routes.js")(app)
+// Un-comment the line directly below in order to provide seed data locally
 // require('./seeders/seed')
 
 // Start the server
